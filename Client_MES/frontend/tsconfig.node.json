@@ -1,0 +1,31 @@
+{
+  "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
+  "include": ["electron.vite.config.*", "src/main/**/*", "src/preload/**/*"],
+  "compilerOptions": {
+    "composite": true,
+    "types": ["electron-vite/node"],
+    "baseUrl": ".",
+    "paths": {
+      "@renderer/*": [
+        "src/renderer/src/*"
+      ],
+      "@components/*": [
+        "src/renderer/src/components/*"
+      ],
+      "@icons/*": [
+        "src/renderer/src/icons/*"
+      ],
+      "@pages/*": [
+        "src/renderer/src/pages/*"
+      ],
+      "@stores/*": [
+        "src/renderer/src/stores/*"
+      ],
+      "@utils/*": [
+        "src/renderer/src/utils/*"
+      ],
+    },
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  }
+}

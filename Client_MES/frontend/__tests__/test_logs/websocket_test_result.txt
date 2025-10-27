@@ -1,0 +1,11 @@
+--- NOUVEAU TEST ---
+[SERVER] Serveur WebSocket démarré sur ws://localhost:8081
+[CLIENT][LOG] Début du test WebSocket
+[SERVER] Serveur : client connecté
+[CLIENT][LOG] Client : connexion ouverte
+[CLIENT][LOG] Client : message envoyé
+[CLIENT][LOG] Client : message reçu Bienvenue, client WebSocket !
+[CLIENT][LOG] Client : message de bienvenue reçu
+[SERVER] Serveur : message reçu du client : {"type":"PING","payload":{"message":"Hello test"}}
+[CLIENT][LOG] Client : message reçu Echo: {"type":"PING","payload":{"message":"Hello test"}}
+[CLIENT][LOG] Client : assertions réussies
